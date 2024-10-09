@@ -1,0 +1,24 @@
+.note-list {
+  margin-top: 20px;
+}
+
+.note-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-list input {
+  margin-right: 10px;
+}
+
+.note-list button {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.note-list button:hover {
+  background-color: #cc0000;
+}

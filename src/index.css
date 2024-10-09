@@ -1,0 +1,61 @@
+.year-view {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Навігаційна панель */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Кнопки перемикання дня/тижня/місяця/року */
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Таблиця місяця */
+.month {
+  display: inline-block;
+  width: calc(100% / 4);
+  margin-bottom: 20px;
+}
+
+.month h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.month table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.month th,
+.month td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.month th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}

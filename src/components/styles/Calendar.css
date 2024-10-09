@@ -1,0 +1,109 @@
+.calendar-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.days-of-week {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.day-names {
+  display: flex;
+  justify-content: space-between; /* Вирівнює елементи по горизонталі */
+  font-weight: bold;
+  margin-bottom: 5px; /* Відступ між назвами днів та таблицею з днями */
+}
+
+.day-names div {
+  margin: 0 4px; /* Відстань між назвами днів */
+  font-size: 17px; /* Збільшення шрифту для назв днів */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.day .dot {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.month {
+  margin: 20px 0; /* Збільшено відступ між місяцями */
+}
+
+.year-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.year-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.year-row .month {
+  flex: 1;
+  margin: 10px; /* Збільшено відступ між місяцями */
+  cursor: pointer;
+}
+
+.year-row .month h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.year-row .month .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.year-row .month .day {
+  border: 1px solid #ccc;
+  padding: 5.5px;
+  text-align: center;
+  position: relative;
+}
+
+.year-row .month .day .dot {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 6px;
+  background-color: red;
+  border-radius: 50%;
+}
